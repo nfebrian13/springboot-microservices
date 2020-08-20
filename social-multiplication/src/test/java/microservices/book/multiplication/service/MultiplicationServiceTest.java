@@ -35,6 +35,10 @@ public class MultiplicationServiceTest {
 		// when
 		Multiplication multiplication = multiplicationService.createRandomMultiplication();
 		// then
+		System.out.println("factorA " + multiplication.getFactorA());
+		System.out.println("factorB " + multiplication.getFactorB());
+		System.out.println("Result " + multiplication.getResult());
+
 		assertThat(multiplication.getFactorA()).isEqualTo(50);
 		assertThat(multiplication.getFactorB()).isEqualTo(30);
 		assertThat(multiplication.getResult()).isEqualTo(1500);
