@@ -7,11 +7,14 @@ import microservices.book.multiplication.domain.MultiplicationResultAttempt;
 
 @Service
 public class MultiplicationServiceImpl implements MultiplicationService {
+	
+	private RandomGeneratorService randomGeneratorService;
 
 	@Override
 	public Multiplication createRandomMultiplication() {
-		// TODO Auto-generated method stub
-		return null;
+		int factorA = randomGeneratorService.generateRandomFactor();
+		int factorB = randomGeneratorService.generateRandomFactor();
+		return new Multiplication(factorA, factorB);
 	}
 
 	@Override
