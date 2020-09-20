@@ -1,0 +1,8 @@
+server:
+  port: 8081
+
+EXCHANGE_NAME: "appExchangeMq"     
+QUEUE_GENERIC_NAME: "appGenericQueueMq"
+QUEUE_SPECIFIC_NAME: "appSpecificQueueMq"        
+ROUTING_KEY: "messages.key.mq"        
+        
